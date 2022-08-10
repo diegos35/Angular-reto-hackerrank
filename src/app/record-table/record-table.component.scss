@@ -1,0 +1,65 @@
+.table-card {
+  width: 90%;
+}
+
+
+table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 2rem;
+  border-collapse: collapse;
+  padding-bottom: 2em;
+
+  thead {
+    tr {
+      webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+
+      th {
+        font-weight: 400;
+        color: #757575;
+        vertical-align: bottom;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+
+        &.sortable {
+          cursor: pointer;
+          outline: none;
+
+          &:hover {
+            color : var(--secondary-color);
+          }
+        }
+      }
+    }
+  }
+
+  th, td {
+    text-align: left;
+    padding: 1.6rem;
+    border-top: 0;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+  tbody {
+    tr {
+      td {
+        font-size: 0.8em;
+        border-bottom: thin solid rgba(0, 0, 0, 0.12);
+        height: 48px;
+        padding: 0 16px;
+        vertical-align: center !important;
+      }
+
+      &:hover {
+        background: #eeeeee;
+      }
+
+      &:last-child {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
